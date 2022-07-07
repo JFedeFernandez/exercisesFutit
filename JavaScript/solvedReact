@@ -1,0 +1,113 @@
+--ejercicio 1 
+
+ Answer: 1)Are the component parameters
+
+ --ejercicio 2 
+
+Answer: 2)A function or class that returns an element
+
+--ejercicio 3
+
+Answer: 2)Class Component
+		3)Component Function
+
+--ejercicio 4
+
+Answer: Primero debemos tener algún estado inicial, para hacerlo debemos definir el estado en el constructor de la clase del componente.
+
+--ejercicio 5
+
+Answer: Los metodos de un ciclo de vida de un componente son:
+		*)constructor(): nos permite definir un estado inicial.
+		*)componentWillMount(): este metodo se ejecuta cuando el componente se esta por renderizar.
+		*)render(): el render toma las propiedades y el estado y genera UI.
+		*)componentDidMount(): este metodo se ejecuta una vez que el componente se renderizo en el navegador y nos permite interactuar con el DOM y otras API.
+		*)componentWillReceiveProps(nextProps): se ejecuta inmediatamente despues de que recibe nuevas propiedades.
+		*)shouldComponentUpdate(nextProps, nextState): este metodo se ejecuta antes de actualizar un componente, cuando llegan las nuevas propiedades y el nuevo estado.
+		*)componentWillUpdate(nextProps, nextState): cuando shouldComponentUpdate(nextProps,nextState) nos devuelve true, se ejecuta este metodo, para poder realizar cualquier tipo de preparacion.
+		*)componentDidUpdate(prevPorps,prevState): esto se ejecuta una vez que se renderiza el DOM. Este nos permite interactuar con el DOM y cualquier API.
+		*)componentWillUnmount(): este es el unico metodo que nos permite realizar cualquier tipo de limpieza antes de remover el componente.
+
+--ejercicio 6
+
+Answer: Cambio el estado de un componente de las siguientes formas:
+		*) Usando setState() para cambiar el estado del componente directamente.
+		*) A traves de una funcion de flecha.
+
+--ejercicio 7
+
+Answer: 2) this.setState({ value: "my value" })
+
+--ejercicio 9
+
+Answer: 
+
+mport React from "react";
+
+/* eslint-disable */
+const NumberList = () => {
+  const persons = [
+    {
+      firstname: "demo",
+      lastname: "demo",
+      dni: "12345678"
+    },
+    {
+      firstname: "demo2",
+      lastname: "demo2",
+      dni: "12345678"
+    },
+    {
+      firstname: "demo3",
+      lastname: "demo3",
+      dni: "123456789"
+    }
+  ];
+
+  const listItems = persons.map((person) => (
+    <li key={person.toString()}>
+      {`${person.firstname} ${person.lastname} ${person.dni}`}
+    </li>
+  ));
+
+  return <ul>{listItems}</ul>;
+};
+
+export default NumberList;
+
+-- ejercicio 11
+
+Answer: 4) import name from 'name';
+
+--ejercicio 12
+
+Answer: 1) import MyComponent from './MyComponent';
+
+
+--ejercicio 13
+
+Answer: a ese codigo le falta antes el return, donde quedaria de la siguiente manera:
+
+		const MiComponente = () => {
+			return <h1> Hello World <\h1>
+		}
+
+		export default MiComponente;
+
+--ejercicio 14
+
+Answer: lo que hace ese algoritmo es mostrar en pantalla los clicks que se le van haciendo al boton. Por lo tanto es un contador de clicks.
+
+--ejercicio 15
+
+Answer: el error es que le falta el constructor para inicializar la propiedad.
+
+--ejercicio 16
+
+Answer: llamamos a una API desde Javascript a traves de Fetch o Axios.
+
+--ejercicio 17
+
+Answer: el uso mas general que se le da a useEffect() es hacer las llamadas a las APIs.
+
+ 
