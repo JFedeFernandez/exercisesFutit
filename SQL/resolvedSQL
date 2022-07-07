@@ -1,0 +1,45 @@
+--ejercicio 1
+
+SELECT (name) 
+FROM AD_Window 
+WHERE (AD_Window_ID = 100)
+
+--ejercicio 2 
+
+UPDATE AD_Window 
+SET name = '--' 
+WHERE (AD_Window_ID = 100)
+
+--ejercicio 3
+
+SELECT DISTINCT b.name, b.ad_window_id
+FROM AD_Tab b
+JOIN AD_Window a
+ON (b.AD_Window_ID = 100)
+
+--ejercicio 4 
+
+SELECT DISTINCT a.name, b.name
+FROM ad_field b
+JOIN ad_tab a
+ON a.ad_window_id = 100
+ORDER BY a.name, b.name;
+
+--ejercicio 5
+
+SELECT b.name, b.number
+FROM AD_Tab b
+JOIN AD_Window a
+ON b.AD_Window_ID = a.AD_Window_ID
+
+--ejercicio 6
+
+SELECT *
+FROM AD_window
+
+--ejercicio 7
+
+SELECT a.name
+FROM ad_window a
+JOIN ad_tab b
+ON b.number > 5
