@@ -1,0 +1,13 @@
+--ejercicio 1 
+
+Hibernate es una herramienta ORM (Mapeo objeto relacional) utilizada en el mapeo de estructuras de bases de datos con objetos Java en tiempo de ejecucion. El uso permite que nos centremos solo en el codigo logico, es una forma de escribir consultas de SQL, administrar conexiones y codigo JDBC.
+
+--ejercicio 2
+
+Ver el codigo magicSquare.java
+
+--ejercicio 3
+
+Ver el codigo HeapSort.java
+
+--ejercicio 4
