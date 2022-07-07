@@ -1,0 +1,67 @@
+--ejercicio 1
+
+Primero imprime 25
+Segundo imprime 81
+Tercero imprime 2
+Cuarto imprime "Undefined"
+
+Imprime "Undefined" ya que el alcance del var solo es en la funcion que definimos, el alcance no llega afuera de la funcion. Solo funciona dentro de la funcion.
+
+--ejercicio 2
+
+Lo que debemos hacer es cambiar el metodo toUpperCase() por el metodo toLowerCase()
+
+var s2 = "Hello World!";
+alert(s2.toLowerCase()); <- this will return: hello world!
+
+--ejercicio 3
+
+var s2 = "Openbravo!!!";
+mostrar = function(param){
+    return param;
+}
+
+console.log(mostrar(s2));
+
+tambien puede ser de la siguiente manera 
+
+mostrar = function(){
+    return "Openbravo!!!";
+}
+
+console.log(mostrar());
+
+--ejercicio 4
+
+ACLARACION: en este ejercicio supongo que la matriz es cuadrada.
+
+let matrizTrue = [[1,0,0],[0,2,0],[0,0,3]];
+let matrizFalse = [[1,0,0],[0,2,3],[0,0,3]];
+
+sum = function(arreglo){
+    var suma = 0;
+    for(var i = 0; i < arreglo.length; i++){
+        suma = suma + arreglo[i];
+    }
+    return suma;
+}
+
+mostrar = function(arreglo,n){
+    for(var row = 0; row < n; row++){
+        let cant = sum(arreglo[row]);
+        for(var col = 0; col < n; col++){
+            if(row == col){
+                console.log(cant)
+                if(cant != arreglo[row][col]){
+                    return false;
+                }
+            }
+        }
+    }
+    return true;
+}
+
+console.log(mostrar(matrizFalse,3)); <- el resultado de esto es false
+console.log(mostrar(matrizTrue,3)); <- el resultado de esto es true
+
+--REACT--
